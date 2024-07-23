@@ -11,28 +11,30 @@ import Login from './components/Login';
 
 const App = () => {
   return (
-    <>
+    <div className="App">
       <Header />
-      <Routes>
-        <Route path="/" element={
-          <>
-            <AboutUs />
-            <Display />
-            <Testimonials />
-            <StayInformed />
-          </>
-        } />
-        <Route path="/about" element={<AboutUs />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
-        {/* Add additional routes as needed */}
-        {/* <Route path="/products" element={<Products />} />
-            <Route path="/product/:id" element={<ProductDetails />} />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/profile" element={<UserProfile />} /> */}
-      </Routes>
+      <main className="main-content">
+        <Routes>
+          <Route path="/" element={
+            <>
+              <AboutUs />
+              <Display />
+              <Testimonials />
+              <StayInformed />
+            </>
+          } />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+          {/* Add additional routes as needed */}
+          {/* <Route path="/products" element={<Products />} />
+              <Route path="/product/:id" element={<ProductDetails />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/profile" element={<UserProfile />} /> */}
+        </Routes>
+      </main>
       <Footer />
-    </>
+    </div>
   );
 };
 

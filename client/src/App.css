@@ -3,6 +3,7 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  height: 100%; /* Ensure full height */
 }
 
 /* Global styles for the entire application */
@@ -25,6 +26,7 @@ body, html {
   padding: 20px;
   display: flex;
   justify-content: space-between;
+  /* Ensures footer does not push content */
 }
 
 .contact-info, .social-media, .newsletter {
